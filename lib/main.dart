@@ -1,18 +1,23 @@
-import 'package:flutter/material.dart';
-import 'Home.dart';
+import 'package:flutter/material.dart'; // Importa o pacote material.dart do Flutter.
+
+import 'Home.dart'; // Importa o arquivo Home.dart.
+
 void main() {
-  runApp(const MyApp());
+  runApp(
+      const MyApp()); // Inicia a aplicação
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  // Classe MyApp é um widget
+  const MyApp({super.key}); // Construtor da classe MyApp.
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // Método build que constrói a interface do aplicativo.
     return const MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: home()
+      // Retorna uma instância de MaterialApp.
+      debugShowCheckedModeBanner: false, // Remove o banner
+      home: home(), // Define a tela inicial como home.
     );
   }
 }
